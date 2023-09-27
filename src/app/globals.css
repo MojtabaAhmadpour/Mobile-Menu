@@ -1,4 +1,45 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: skyblue;
+}
+.navigation{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuToggle{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background: #f2f2f2;
+    border: 5px solid #f2f2f2;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menuToggle::before{
+    content: '+';
+    position: absolute;
+    font-size: 40px;
+    transition: 1.5s;
+    color: #40189E;
+}
+
+.menuToggle.active::before{
+    transform: rotate(225deg);
+} 
