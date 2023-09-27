@@ -14,13 +14,11 @@ export default function Home() {
     <>
 
       <div className="container">
-        <div classNames="navigation">
-          <div className={`menuToggle ${isRotate ? "active" : ""}`}
-          onClick={Change}
-
-          ></div>
           <div className="menu"></div>
-        </div>
+          <div className={`menuToggle ${isRotate ? "active" : ""}`}
+          onClick={Change}>
+            <span></span>
+          </div>
       </div>
 
 

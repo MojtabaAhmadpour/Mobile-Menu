@@ -1,24 +1,18 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     background: skyblue;
 }
-.navigation{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.menuToggle{
+.menuToggle {
     position: relative;
     display: flex;
     align-items: center;
@@ -26,13 +20,14 @@
     width: 65px;
     height: 65px;
     background: #f2f2f2;
-    border: 5px solid #f2f2f2;
+    border: 5px solid skyblue;
     border-radius: 50%;
     cursor: pointer;
     z-index: 10;
+    transform: translateY(-30px);
 }
 
-.menuToggle::before{
+.menuToggle::before {
     content: '+';
     position: absolute;
     font-size: 40px;
@@ -40,6 +35,43 @@
     color: #40189E;
 }
 
-.menuToggle.active::before{
+.menuToggle.active::before {
     transform: rotate(225deg);
-} 
+}
+
+.menu {
+    position: absolute;
+    width: 360px;
+    height: 70px;
+    background: #40189E;
+    border-radius: 70px;
+}
+
+.menuToggle span {
+    position: absolute;
+    inset: 0;
+}
+
+.menuToggle span::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -23px;
+    top: 22px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 3px -6px skyblue;
+}
+
+.menuToggle span::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -23px;
+    top: 22px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -3px -6px skyblue;
+}
