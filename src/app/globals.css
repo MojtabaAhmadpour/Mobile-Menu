@@ -41,10 +41,11 @@
 
 .menu {
     position: absolute;
-    width: 360px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background: #40189E;
     border-radius: 70px;
+    transform: translateY(-30px);
 }
 
 .menuToggle span {
@@ -74,4 +75,37 @@
     background: transparent;
     border-top-left-radius: 20px;
     box-shadow: -3px -6px skyblue;
+}
+
+.menu ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    line-height: 80px;
+}
+
+.menu ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.menu ul li a{
+    display: block;
+    font-size: 25px;
+    color: #A69FFF;
+}
+.menu ul li a:hover{
+    color: #f2f2f2;
+}
+
+.menu ul li:nth-child(3){
+    width: 30px;
+}
+
+.menuToggle.active ~ .menu {
+    width: 360px;
+    height: 70px;
+    transform: translateY(0);
 }
