@@ -1,12 +1,8 @@
 'use client'
 import { useState } from "react"
-import { TfiHome } from "react-icons/tfi"
-import { AiOutlineUser } from "react-icons/ai"
-import { BsHeart } from "react-icons/bs"
-import { PiAlarmLight } from "react-icons/pi"
 import Image from "next/image"
-import Ham from "../../public/Ham.svg"
-import Close from "../../public/Close.svg"
+import Ham from "../app/assets/icons/ham.svg"
+import Close from "../app/assets/icons/Close.svg"
 
 
 export default function Home() {
