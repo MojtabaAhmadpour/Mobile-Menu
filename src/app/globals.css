@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: skyblue;
+    background: #fff;
 }
 
 .menuToggle {
@@ -20,7 +20,7 @@
     width: 65px;
     height: 65px;
     background: #f2f2f2;
-    border: 5px solid skyblue;
+    border: 5px solid #fff;
     border-radius: 50%;
     cursor: pointer;
     z-index: 10;
@@ -43,7 +43,7 @@
     position: absolute;
     width: 60px;
     height: 60px;
-    background: #40189E;
+    background: #E5E7EB;
     border-radius: 70px;
     transform: translateY(-30px);
     transition: transform  0.5s, width 0.5s, height 0.5s;
@@ -64,7 +64,7 @@
     top: 22px;
     background: transparent;
     border-top-right-radius: 20px;
-    box-shadow: 3px -6px skyblue;
+    box-shadow: 3px -6px #fff;
 }
 
 .menuToggle span::after {
@@ -76,7 +76,7 @@
     top: 22px;
     background: transparent;
     border-top-left-radius: 20px;
-    box-shadow: -3px -6px skyblue;
+    box-shadow: -3px -6px #fff;
 }
 
 .menu ul {
